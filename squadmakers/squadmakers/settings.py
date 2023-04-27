@@ -12,6 +12,14 @@ BOT_NAME = "squadmakers"
 SPIDER_MODULES = ["squadmakers.spiders"]
 NEWSPIDER_MODULE = "squadmakers.spiders"
 
+ITEM_PIPELINES = {
+    'squadmakers.pipelines.pipelines': 300,
+    # ...
+}
+
+MONGO_URI = 'mongodb://localhost:27017/'
+MONGO_DATABASE = 'mydatabase'
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "squadmakers (+http://www.yourdomain.com)"
